@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Sallyvely/server_side_javascript#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "underscore": "^1.13.3"
   }
 }
