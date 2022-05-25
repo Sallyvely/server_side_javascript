@@ -7,9 +7,13 @@ app.set('views','./view_web');
 app.get('/',function(req,res){
   res.render('form');
 });
+app.get('/profile',function(req,res){
+  res.render('profile');
+});
 app.get('/login',function(req,res){
   res.render('login');
 });
+
 app.listen(3020, function(){
   console.log('Connected, 3020 port!');
 });
