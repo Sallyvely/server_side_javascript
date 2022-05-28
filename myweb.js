@@ -1,7 +1,15 @@
 var express = require('express');
 var app = express();
+var mysql = require('mysql')
 var fs = require('fs');
+var connection = mysql.createConnection({
+  host : '127.0.0.1',
+  user : '',
+  password : '',
+  database : ''
+});
 
+connection.connect();
 app.set('view engine', 'jade');
 app.set('views','./view_web');
 app.get('/',function(req,res){
